@@ -41,7 +41,7 @@ DDYm <- merge(COWDDY, DDY, all.x=TRUE)
 
 # write.table(DDYm,file="gml-ddy.csv",sep=",",row.names=F,na="")
 
-Disps <- with(Disp, data.frame(dispnum3, hiact, hostlev, mindur, maxdur, fatality, fatalpre, stmon))
+Disps <- with(Disp, data.frame(dispnum3, hiact, hostlev, mindur, maxdur, outcome, settle, fatality, fatalpre, stmon))
 
 DDY <- join(DDY, Disps, by=c("dispnum3"), type="left")
 

@@ -45,7 +45,7 @@ NDY$midonset <- with(NDY, ave(year, dispnum3, FUN = function(x)
 NDY <- MoveFront(NDY, c("dispnum3", "ccode1", "ccode2", "year", 
                         "midonset", "midongoing"), exact = FALSE)
 
-Disps <- with(Disp, data.frame(dispnum3, hiact, hostlev, mindur, maxdur,
+Disps <- with(Disp, data.frame(dispnum3, hiact, hostlev, mindur, maxdur, outcome, settle,
                                fatality, fatalpre, stmon, endmon))
 
 NDY <- join(NDY, Disps, by=c("dispnum3"), type="left")
