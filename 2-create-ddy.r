@@ -1,4 +1,4 @@
-setwd("~/Dropbox/projects/")
+setwd("~/Dropbox/projects/mid-project/replication")
 library(sqldf)
 library(plyr)
 library(DataCombine)
